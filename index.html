@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/funcoes.js"></script>
+    <title>IMC - Indice de Massa Corporal</title>
+</head>
+
+<body>
+    <p id="letreiro_esquerda">Calculadora<br />de<br />I M C</p><br />
+    <p id="letreiro_direita">( Indice de Massa Corporal )</p>
+    <div id="imc-resultado">
+        <div id="resultado"></div>
+        <div id="diagnostico"></div>
+        <img src="img/corpo.jpg" width="400" height="360" id="corpo" />
+    </div>
+    <div class="imc" id="imc">
+        <div class="fieldset" id="campos">
+            <label> ALTURA: </label>
+            <br />
+            <input type="text" name="altura" id="alt" class="input"><span>m</span>
+            <p id="vezes">÷</p>
+            <label> PESO: </label>
+            <br />
+            <input type="number" name="peso" id="pes" class="input"><span>kg</span>
+            <div class="botao">
+                <button class="button" id="press">Calcular</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
